@@ -1,0 +1,165 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("bk.jpg");
+  background-color: #cccccc;
+}
+
+canvas {
+  display: block;
+}
+
+#dateandtime{
+  color: white;
+}
+
+#lft {
+  float: left;
+  width: 250px;
+  position: relative;
+  font-size: 12px;
+  color: red;
+   border: 3px solid transparent;
+  padding: 4px;
+  border-style: dotted;
+  border-color: white;
+  border-radius: 11px;
+}
+
+#right {
+  float: right;
+  width: 150px;
+  position: relative;
+  color: red;
+   border: 3px solid transparent;
+  padding: 4px;
+  border-style: dotted;
+  border-color: white;
+  border-radius: 11px;
+}
+
+#center {
+  float: left;
+  width: 400px;
+   border: 3px solid transparent;
+  padding: 1px;
+  border-style: dotted;
+  border-color: white;
+  border-radius: 11px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px
+}
+
+.col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#knightext{
+  color: white;
+}
+
+.flash{
+  animation: blinker-two 1s linear infinite;
+  color: white;
+}
+@keyframes blinker-two {
+        100% {
+          opacity: 0;
+        }
+      }
+
+.logo{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.dance{
+  width: 40%;
+  margin-right:auto;
+  margin-left:auto;
+  display: block;
+  float: bottom;
+}
+
+.buttons{
+  float:left;
+  width: 400px;
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+
+.myb {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myb:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myb:active {
+	position:relative;
+	top:1px;
+}
+
+.rib::after{
+  content: 'Batman is one of the most famous super heroes of all time';
+  animation: animate infinite 20s;
+}
+
+@keyframes animate{
+  0%{
+    content: 'Batman does not have any superhuman powers, but relies on high tech gear, martial arts, and high intelligence';  
+  }
+  25%{
+    content: 'Batman and Robin together are called the Dynamic Duo.';  
+  }
+  50%{
+    content: 'In later stories, he never kills and never uses a gun.';  
+  }
+  75%{
+    content: 'The police commissioner uses a spotlight that shines a bat symbol in the sky called the batsignal when he needs Batmans help.';  
+  }
+  80%{
+    content: 'He is considered the greatest detective in the world.';  
+  }
+  100%{
+    content: 'In 1988, fans voted to have Jason Todd, the second Robin, die.';  
+  }
+}
+
